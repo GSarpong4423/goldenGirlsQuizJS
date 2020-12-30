@@ -1,20 +1,126 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="jsQuiz.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Document</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  
+  <!-- Custom styles for this template -->
+  <link href="jsQuiz.css" rel="stylesheet">
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  
 </head>
+
 <body>
-    <section class="top-sec">
-        <div class="heading">
-            <h1>Golden Girls Quiz</h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white">
+    <img src="https://pixelken.com/is/wp-content/uploads/2020/04/Web_Sticker_GoldenGirls0.jpg" width="1000" height="800">
+    <div class="masthead-content">
+      
+      <div class="container"></div>
+      <h1 class="masthead-heading mb-0">Which One Are You?</h1>
+      <h3 class="masthead-subheading mb-0">Take quiz below</h3>
+      
+        <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5" data-toggle="collapse">Learn More</a>
+        <div id="demo" class="collapse">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </div>
-        <div class="score-sec">
-            <h2>score</h2>
-            <h1 class="score">0</h1>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+  
+  <section>
+    <form class="quiz-sec">
+      <div class="row">
+        <div class="col-sm-5 col-md-6">
+          <div class="question">
+            <p>What type of food do you prefer ?</p>
+              <input type="radio" name="q1" value="op1"><label for="op1">Italian American</label><br>
+              <input type="radio" name="q1" value="op2"><label for="op2">Southern "Soul Food"</label><br>
+              <input type="radio" name="q1" value="op3"><label for="op3">Stange Midwesten</label><br>
+              <input type="radio" name="q1" value="op4"><label for="op4">Stright up Itlian "Sicilian Style"</label><br>
+            </div> 
+          </div>
+          <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+            <div class="question">
+              <p>What would be your career of choice?</p>
+                <input type="radio" name="q1" value="op1"><label for="op1">Substitute teacher</label><br>
+                <input type="radio" name="q1" value="op2"><label for="op2">Counceling</label><br>
+                <input type="radio" name="q1" value="op3"><label for="op3">Live off Big Daddy's money</label><br>
+                <input type="radio" name="q1" value="op4"><label for="op4">Shit, I'm too old to work. Social Security works!</label>
+            </div>
+          </div>
+          <p></p> 
+        <div class="col-sm-5 col-md-6">
+          <div class="question">
+            <p>How would you describe your love life? </p>
+              <input type="radio" name="q1" value="op1"><label for="op1">Why have one man, when you can hve as many as you want!</label><br>
+              <input type="radio" name="q1" value="op2"><label for="op2">As long as he has dentures and has a good time.</label><br>
+              <input type="radio" name="q1" value="op3"><label for="op3">Still in love (well some-what) with your ex.</label><br>
+              <input type="radio" name="q1" value="op4"><label for="op4">One lady gal, open to new love.</label>
+          </div> 
         </div>
-    </section>
-    <script src=app.js></script>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+          <div class="question">
+            <p>What's your favorite dessert?</p>
+              <input type="radio" name="q1" value="op1"><label for="op1">Cheesecake</label><br>
+              <input type="radio" name="q1" value="op2"><label for="op2">Chocolate cake</label><br>
+              <input type="radio" name="q1" value="op3"><label for="op3">Vanilla Cake</label><br>
+              <input type="radio" name="q1" value="op4"><label for="op4">Ice Cream</label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
